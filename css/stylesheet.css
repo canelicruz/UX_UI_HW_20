@@ -1,0 +1,393 @@
+/* Body */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+/* Scroll indicator dot */
+#scrollDot {
+    position: fixed;
+    left: 20px;/* Fixed on the left side of the screen */
+    width: 10px;
+    height: 10px;
+    background-color: #F82F2A;
+    border-radius: 50%; /* Makes it a circle */
+    pointer-events: none;/* Ensure the dot doesn't block any mouse events */
+    z-index: 9999;  /* Make sure it stays on top of other elements */
+}
+
+.bigger {
+    transform: scale(1.5) rotate(360deg);
+    transition: transform 0.3s ease;
+    animation: rotate-logo 1s ease-in-out 1;
+}
+
+@keyframes rotate-logo {
+    from {
+        transform: scale(1.5) rotate(0deg);
+    } /* End rotation */
+    to {
+        transform: scale(1.5) rotate(360deg);
+    }/* End rotation */
+} 
+
+p { 
+    color: black;
+    font-weight: normal; /* Set the text color of all <p> elements to black */
+
+}h1 { 
+    color: black; 
+    font-weight: normal; /* Combine duplicate h1 styling */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;/* Simplified margin setting */
+    background-color: #FFFFFF;
+}
+
+/
+/* Header */
+header {
+    padding-top: 8px;
+    width: 100%; /* Added unit */
+    height: 6%;
+    background-color: #FFFFFF;
+}
+
+/* Navigation */
+nav {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 2%;
+}
+
+ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul li:hover a {
+    color: #F82F2A;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    color: #000000;
+    font-size: 14px;
+    text-align: left;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    transition: all 0.3s linear;
+}
+
+/* Logo */
+.logo {
+    color: #000000;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Hero Header */
+.hero_header {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 4px;
+}
+/* About Section */
+.text_column {
+    width: 90%;
+    text-align: left;
+    font-weight: normal;
+    line-height: 25px;
+    float: left;
+    padding: 0 20px; /* Combined padding */
+    color: #000000;
+}
+/* Intro Section */
+.intro {
+    padding-bottom: 35px;
+    border-radius: 10px;
+    color: #000000;
+    display: inline-block;
+    background-color: #FAF8F6;
+}
+
+/* Column */
+.column {
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+    float: left;
+}
+
+.intro .column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 75px;
+}
+
+.intro .column p {
+    padding: 0 30px;
+    text-align: justify;
+    line-height: 25px;
+    font-weight: normal;
+    margin: 4% 60px;
+}
+.intro .column h3 {
+    color: #000000;
+    text-align: center;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .intro .column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .intro .column p {
+        padding: 0 10px;
+    }
+}
+
+/* Gallery Styles */
+.gallery {
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 35px;
+    margin-top: -5px;
+}
+
+/* Thumbnail styles */
+.thumbnail {
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin: 30px 1.6%;
+    background-color: #FAF8F6;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.gallery .thumbnail h4,
+.gallery .thumbnail p {
+    margin: 0;
+    color: #000000;
+    text-align: left;
+    padding: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cards for images inside the thumbnail */
+.cards {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* My UX Skills */
+.skills {
+    clear: both;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 35px;
+    margin: -5px 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F82F2A;
+}
+
+/* Skills Grid */
+.skillscontainer {
+    display: grid;
+    grid-template-columns: 1fr 500px 5px 500px 1fr;
+    grid-template-rows: 1fr 300px 300px 1fr;
+}
+
+/* UX Skills Section */
+.uxskills {
+    display: grid;
+    width: auto;
+    text-align: center;
+    margin: 30px 15px;
+    background-color: #C8BCAE;
+    border-radius: 10px;
+   
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+.button {
+    width: 200px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 6px;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 2px;
+    border: 1px solid #F82F2A;
+    color: #F82F2A;
+    background-color: #FAF8F6;
+    transition: all 0.3s linear;
+}
+
+.button:hover {
+    background-color: #F82F2A;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: none;
+    font-weight: lighter;
+    letter-spacing: 1px; /* or a smaller value like -1px */
+    border-top-width: 2px;
+    font-size: small;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.profile {
+    width: 50%;
+}
+
+.gallery .thumbnail .tag {
+    color: #5D5E5D;
+    padding: 4px 20px;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 38px; /* Reduced width */
+    height: 38px; /* Reduced height */
+    background-color: #F82F2A;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Keeps the button round */
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    text-align: center; /* Center the text horizontally */
+    line-height: 38px; /* Center the text vertically */
+    font-size: 14px; /* Adjust the font size */
+}
+
+
+
+/* Mobile */
+@media (max-width: 320px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin: 13px 0;/* Combined margins */
+    }
+
+   .text_column {
+    width: 100%;
+    text-align: center;
+    padding: 10px; /* No padding on .text_column */
+}
+
+.intro .column p {
+    width: 80%;                /* Keep the width at 80% */
+    margin: 0 auto;           /* Center the paragraph */
+    padding: 0 10%;           /* Add equal horizontal padding */
+    text-align: justify;       /* Justify text for a neat look */
+}
+
+      .gallery {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensures thumbnails are centered */
+    }
+
+    .thumbnail {
+        width: 98%; /* Slightly reduce width */
+        margin-bottom: 20px; /* Add spacing between thumbnails */
+
+        float:right;
+        text-align: justify;
+    }
+
+    .column {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .hero_header {
+        padding: 10px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+/* Responsive Gallery on Small Screens */
+@media (max-width: 768px) {
+    .thumbnail {
+        width: 100%;
+        margin-bottom: 20px;
+          float: center;
+        text-align: center;
+    }
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+    .text_column {
+        width: 100%;
+    }
+
+   
+    .text_column {
+        width: 90%;
+        margin: 0;
+        padding: 20px;
+        text-align:center;
+        
+    }
+
+    .intro .column p {
+        width: 80%; 
+        
+    }
+}
+ .logo {
+        width: 100%;
+        text-align: center;
+        margin: 13px 0; /* Combined margins */
+    }
+

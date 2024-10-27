@@ -1,4 +1,4 @@
-/* Body */
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: #FFFFFF;
@@ -55,6 +55,7 @@ header {
     width: 100%; /* Added unit */
     height: 6%;
     background-color: #FFFFFF;
+
 }
 
 /* Navigation */
@@ -119,7 +120,9 @@ nav ul li {
 }
 /* Intro Section */
 .intro {
+     margin-top: 20px; /* Adjust the value as needed */
     padding-bottom: 35px;
+    padding-top: 20px;
     border-radius: 10px;
     color: #000000;
     display: inline-block;
